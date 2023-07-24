@@ -1,0 +1,267 @@
+:root {
+    --gray: #f0f0f0;
+    --orange: #cb3931;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+.body-container {
+    background-image: linear-gradient(to bottom, #f0f0f0 58%, #cb3931 58%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-block: 90px;
+    margin: 0;
+}
+
+.wrapper {
+    width: 60vw;
+    position: relative;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 70px;
+    height: 100%;
+    background-color: white;
+    gap: 50px;
+    padding-block: 135px;
+}
+
+.brief {
+    width: 26%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--orange);
+}
+
+.main-information {
+    background-color: var(--gray);
+    /* height: 50%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    padding-top: 190px;
+    padding-inline: 50px;
+    padding-bottom: 50px;
+    gap: 20px;
+}
+
+.personal-information {
+    display: flex;
+    gap: 75px;
+}
+
+.profile-image {
+    width: 391px;
+    height: 416px;
+    object-fit: cover;
+}
+
+.greeting {
+    font-size: 90px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    position: relative;
+    line-height: 90px;
+}
+
+.social-information {
+    color: var(--orange);
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    position: absolute;
+    right: 180px;
+}
+
+.specification-title {
+    color: var(--orange);
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.specification-with-social-icons {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.icons {
+    display: flex;
+    gap: 35px;
+}
+
+.experience-education {
+    display: grid;
+    grid-template-columns: 2fr 1fr 0.01fr;
+    gap: 60px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.experience,
+.education {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 24px;
+    color: var(--orange);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.entry {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.entries {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.year {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.job-position {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-weight: bold;
+}
+
+.company {
+    color: var(--orange);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.institution {
+    color: var(--orange);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.description {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #8B8B8B;
+    width: 312px;
+}
+
+.experience-details {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.education-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.personal-image {
+    position: absolute;
+    top: 0;
+    right: 120px;
+}
+
+@media (max-width: 1300px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .container {
+        padding-block: 244px;
+    }
+
+    .brief {
+        width: 100%;
+    }
+
+    .personal-image {
+        right: 16px;
+    }
+
+    .personal-information {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .greeting {
+        font-size: 50px;
+        line-height: 45px;
+    }
+
+    .social-information {
+        font-size: 9px;
+        flex-direction: column;
+        position: unset;
+    }
+
+    .specification-with-social-icons {
+        flex-direction: column;
+    }
+
+    .experience-education {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 60px;
+        justify-content: start;
+    }
+
+    .description {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        color: #8B8B8B;
+        width: auto;
+    }
+
+    .profile-image {
+        width: 200px;
+        height: auto;
+    }
+
+    .new-line {
+        display: none;
+    }
+
+    .main-information {
+        padding-top: 50px;
+    }
+}
