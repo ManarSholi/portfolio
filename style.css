@@ -1,6 +1,6 @@
 :root {
-    --gray: #f0f0f0;
-    --orange: #cb3931;
+    --gray: #f1f4f5;
+    --navy_blue: #1E3A8A;
 }
 
 * {
@@ -18,10 +18,7 @@ body {
 }
 
 .body-container {
-    background-image: linear-gradient(to bottom, #f0f0f0 58%, #cb3931 58%);
-    position: absolute;
-    top: 0;
-    left: 0;
+    background-image: linear-gradient(to bottom, #ADD8E6 58%, var(--navy_blue) 58%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,17 +44,22 @@ body {
     padding-block: 135px;
 }
 
+.about_me {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+
 .brief {
-    width: 26%;
+    width: 30%;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 12px;
-    color: var(--orange);
+    color: var(--navy_blue);
 }
 
 .main-information {
     background-color: var(--gray);
-    /* height: 50%; */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -66,6 +68,7 @@ body {
     padding-inline: 50px;
     padding-bottom: 50px;
     gap: 20px;
+    z-index: 1;
 }
 
 .personal-information {
@@ -74,9 +77,11 @@ body {
 }
 
 .profile-image {
-    width: 391px;
-    height: 416px;
+    width: 451px;
+    height: 451px;
     object-fit: cover;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 .greeting {
@@ -88,7 +93,7 @@ body {
 }
 
 .social-information {
-    color: var(--orange);
+    color: var(--navy_blue);
     font-size: 12px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
@@ -100,7 +105,7 @@ body {
 }
 
 .specification-title {
-    color: var(--orange);
+    color: var(--navy_blue);
     font-size: 25px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
@@ -122,8 +127,12 @@ body {
     display: grid;
     grid-template-columns: 2fr 1fr 0.01fr;
     gap: 60px;
-    justify-content: center;
-    align-items: flex-start;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 0.01fr;
+    gap: 60px;
 }
 
 .experience,
@@ -133,9 +142,15 @@ body {
     flex-direction: column;
 }
 
+.project {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
 .title {
     font-size: 24px;
-    color: var(--orange);
+    color: var(--navy_blue);
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
@@ -156,32 +171,39 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-style: italic;
+    font-size: 13px;
+}
+
+.gpa {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
 }
 
 .job-position {
     color: black;
     font-family: 'Poppins', sans-serif;
-    font-weight: 500;
     font-weight: bold;
 }
 
 .company {
-    color: var(--orange);
+    color: var(--navy_blue);
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
 
 .institution {
-    color: var(--orange);
+    color: var(--navy_blue);
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
 
-.description {
+.school {
     font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    color: #8B8B8B;
+    font-weight: 300;
+    color: #393939;
     width: 312px;
+    font-size: 13px;
 }
 
 .experience-details {
@@ -198,7 +220,12 @@ body {
 .personal-image {
     position: absolute;
     top: 0;
-    right: 120px;
+    right: 0px;
+    top: 0px;
+}
+
+.js_certification_link {
+    color: black;
 }
 
 @media (max-width: 1300px) {
@@ -245,9 +272,9 @@ body {
         justify-content: start;
     }
 
-    .description {
+    .school {
         font-family: 'Poppins', sans-serif;
-        font-weight: 500;
+        font-weight: 300;
         color: #8B8B8B;
         width: auto;
     }
